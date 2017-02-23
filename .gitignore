@@ -1,0 +1,40 @@
+# Never save database creditentials in your repo. Keep a dummy copy with a different name eg "local.xml.dev" 
+/app/etc/local.xml
+
+sitemap.xml
+
+# All of the var folders can be excluded.
+/var/*
+!/var/.htaccess
+!/var/package/*.xml
+
+# Remove generated files
+/includes/*
+!/includes/.htaccess
+
+/media/*
+!/media/.htaccess
+!/media/customer/.htaccess
+!/media/dhl/logo.jpg
+!/media/downloadable/.htaccess
+!/media/xmlconnect/custom/ok.gif
+!/media/xmlconnect/original/ok.gif
+!/media/xmlconnect/system/ok.gif
+
+
+# I use a global gitignore file for the following, but worth noting these:
+.DS_Store
+.phpstorm.meta.php
+.idea/
+.modman
+.project
+*.log
+*.bak
+*.bak.*
+*.thumbs/
+Thumbs.db
+.svn
+*.swp
+
+# Don't commit composer dependencies:
+composer/
